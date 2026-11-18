@@ -271,3 +271,10 @@ details p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
 .ref-grid td:first-child code { white-space: nowrap; }
 #settings { margin-top: 32px; }
 .settings-text { color: var(--text-muted); max-width: 900px; margin: 0; }
+
+/* What's new without a screenshot; "New" tags on feature cards */
+@media (min-width: 860px) { .new-box.no-shot { grid-template-columns: 1fr; } }
+.new-box.no-shot ul.new-list { columns: 2 380px; column-gap: 40px; }
+.new-box ul.new-list li { break-inside: avoid; }
+.new-intro { color: var(--text-muted); margin: 0; }
+.new-tag { display: inline-block; font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: rgba(166, 116, 245, 0.16); color: #c9a6ff; border: 1px solid rgba(166, 116, 245, 0.4); vertical-align: 0.15em; margin-left: 6px; }

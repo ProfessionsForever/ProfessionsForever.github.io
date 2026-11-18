@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ProfessionsForever: the professions window for WoW: Forever</title>
-	<meta name="description" content="The professions window WoW: Forever deserves. It knows what's in your bags, your bank, your mailbox and on every one of your alts: a crafting queue, a shopping list that fills itself, a Transfer Planner, Disenchanting Mode, cooldowns and waypoints to vendors, trainers and bankers.">
+	<meta name="description" content="The professions window WoW: Forever deserves. It knows what's in your bags, your bank, your mailbox and on every one of your alts: a crafting queue, a shopping list that fills itself, a Transfer Planner, Disenchanting Mode, cooldowns, camp, One-Click Fishing and waypoints to vendors, trainers and bankers.">
 	<meta name="theme-color" content="#0e0c0a">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="ProfessionsForever">
@@ -60,7 +60,7 @@
 			</a>
 		</div>
 		<div class="meta-line">
-			<span>Version 0.10.0</span>
+			<span>Version 0.10.3</span>
 			<span>Free and open source (GPL-3.0)</span>
 			<span>Built for WoW: Forever only</span>
 			<span>No required dependencies</span>
@@ -115,25 +115,22 @@
 <!-- What's new -->
 <section id="new" aria-labelledby="new-title">
 	<div class="wrap">
-		<div class="new-box">
+		<div class="new-box no-shot">
 			<div class="new-text">
 				<p class="eyebrow">Latest release</p>
-				<h2 id="new-title">New in 0.10.0 <span class="badge">CURRENT</span></h2>
+				<h2 id="new-title">New in 0.10.3 <span class="badge">CURRENT</span></h2>
+				<p class="new-intro">What's arrived in 0.10.2 and 0.10.3.</p>
 				<ul class="new-list">
-					<li><strong>Disenchanting Mode:</strong> the dust icon on the Enchanting tab turns your recipes into a list of everything you could disenchant: what each piece might give, whether it's worth more vendored, disenchanted or on the auction house, and a Disenchant button. Your alts' gear shows up too.</li>
-					<li><strong>Disenchant advice on tooltips:</strong> weapons and armour tell you whether to disenchant, vendor or auction them. Your own disenchants are recorded, so you can see how the real drops compare with the odds.</li>
-					<li><strong>Check in on your alts:</strong> browse any of your characters' professions and queue crafts for them. Whoever holds the materials is told what to mail.</li>
-					<li><strong>A shopping list that keeps itself:</strong> whatever your queues are short of goes on the list by itself, shared across your characters on the same faction.</li>
-					<li><strong>Mail counts:</strong> items waiting in a mailbox count as yours, and the Transfer Planner collects what your queue needs in one click.</li>
-					<li><strong>A smarter crafting queue:</strong> the bits a recipe needs get queued first, and when materials are short it won't burn them all on the first step.</li>
-					<li><strong>And more:</strong> quick buttons with a button for each profession, Recipe Search, the Skill Up Route (with SkillUp Forever), side windows that always stay on screen, and a What's New window after each update.</li>
+					<li><strong>Your alts' queues work together:</strong> hover an item to see how many your crafting queues need, how many you still have to buy, and which of your characters' queues are making it. Queue bolts on your tailor and your engineer's shopping list drops them and lists the cloth instead. Ore says what it smelts into, and <strong>Queue Needed</strong> queues exactly what's missing in one click.</li>
+					<li><strong>Queue your enchants:</strong> queue an enchant with a quantity to plan and shop for its materials. Each one you apply with the Enchant button comes off the queue.</li>
+					<li><strong>Set up camp:</strong> a new Camp window (footer, quick button or <code>/pf camp</code>) lists every camp feature you hold, can craft, have on an alt or haven't learned yet. Place them with one click, and the shared cooldowns sit right at the top.</li>
+					<li><strong>One-Click Fishing:</strong> bind one key: it puts on your fishing gear, best pole and lure, casts, and catches when the fish bites. Your normal gear goes back on when you mount or stop fishing, and bites are louder so you don't miss the splash.</li>
+					<li><strong>Send stuff by hand:</strong> the Transfer Planner's letter button opens Manual Transfers: send an alt an item or some gold, or ask one to send you something. Drop a stack from your bags straight on the window. At the mailbox, Mail attaches exactly the right amount, splitting stacks for you. You can ask for gear from Disenchanting Mode too.</li>
+					<li><strong>Keys for your quick buttons:</strong> bind a key to any window, to Disenchanting Mode or to each of your professions. Hover a button and press a key to bind it (<code>/pf bind</code>). New Overview and Settings buttons, plus rows or columns, growing from any corner.</li>
+					<li><strong>And more:</strong> "On Shopping List" on item tooltips, how many a craft makes on the recipe icon, a smarter auction verdict when disenchanting, crafted reagents priced at their crafting cost, options in categories with a live tooltip preview, and a pile of fixes.</li>
 				</ul>
 				<a class="btn" href="changelog.html">Read the full changelog</a>
 			</div>
-			<figure class="shot new-shot">
-				<a href="assets/screenshots/whats-new.png" class="zoom"><img src="assets/screenshots/whats-new.png" alt="The What's New window in game, listing the highlights of version 0.10.0." width="875" height="1214" loading="lazy"></a>
-				<figcaption>What's New</figcaption>
-			</figure>
 		</div>
 	</div>
 </section>
@@ -176,7 +173,7 @@
 						<li>Search by recipe name or reagent; sort by name, skill up difficulty, skill up chance, craftable amount or profit.</li>
 						<li>Filter by learned, has materials, skill-up colour or favorites, with categories you can collapse.</li>
 						<li>Colour-coded by skill up difficulty, with the skill up chance on each recipe and a stripe for whether the materials are in your bags, bank, partly there or missing.</li>
-						<li>Unlearned recipes say where they come from and what skill they need. <kbd>Ctrl</kbd>-click to preview gear in the dressing room.</li>
+						<li>Unlearned recipes say where they come from and what skill they need, with every trainer of your faction that teaches it, nearest first. <kbd>Ctrl</kbd>-click to preview gear in the dressing room.</li>
 					</ul>
 				</div>
 			</div>
@@ -194,6 +191,7 @@
 						<li><strong>Have / need</strong> for every reagent, plus what's in your bank and mailbox, and what your queue and shopping list already want.</li>
 						<li>Craftable counts from your bags, with your bank, and with your alts.</li>
 						<li>Tools and stations you need, and whether you have them (a better Enchanting rod counts).</li>
+						<li><strong>With Auctionator:</strong> Cost to Craft and Profit, with each reagent priced at the cheapest of the vendor, the auction house or crafting it yourself (a Bolt of Silk Cloth against four Silk Cloth).</li>
 					</ul>
 				</div>
 			</div>
@@ -211,13 +209,16 @@
 						<li>Queue any recipe with its own amount, then click <strong>Craft Queue</strong>. Between recipes, a click on the game world crafts the next one.</li>
 						<li><strong>Sub-crafts first:</strong> reagents you can make yourself are queued ahead of the recipe, sized to what you're short of. Short on materials? It holds back the early steps so the final crafts aren't starved.</li>
 						<li><strong>At a glance:</strong> rows are marked red when something is missing, blue when it's in the bank, and pink when it's waiting in the mailbox.</li>
-						<li><strong>Plan for your alts:</strong> edit another character's queue from the character picker.</li>
+						<li><strong>Plan for your alts:</strong> edit another character's queue from the character picker. When another character is making a missing reagent, the queue names them.</li>
+						<li><strong>Enchants too:</strong> queue an enchant with a quantity to plan and shop for its materials; each one you apply comes off the queue.</li>
 					</ul>
 					<p class="eyebrow sub-eyebrow">Shopping list</p>
 					<h3>You never have to work out what to buy again</h3>
 					<ul>
 						<li>Fills itself from your queues and follows them as they change, shared by your characters of the same faction (or one list per character).</li>
 						<li>Needed, owned, from alts and still to buy, a click to search the auction house, and plain-text export.</li>
+						<li><strong>Your alts' queues work together:</strong> when one character queues bolts, the shared list drops them and lists the cloth instead. <strong>Queue Needed</strong> queues exactly the crafts that make what's missing.</li>
+						<li><strong>On your tooltips:</strong> items say <strong>On Shopping List</strong>, <strong>Needed by Crafting Queues</strong> and <strong>Still to Buy</strong>, which of your characters' queues are making them, and what a raw material such as ore crafts into.</li>
 						<li><strong>With Auctionator:</strong> unit prices, costs, an estimated total, and a one-click Auctionator shopping list.</li>
 					</ul>
 				</div>
@@ -237,6 +238,7 @@
 						<li>The Transfer Planner lists what each character should send for your queues. At the mailbox, <strong>Mail</strong> attaches it and <strong>Collect from Mailbox</strong> takes what your queue needs.</li>
 						<li><strong>It shows up when you need it:</strong> it opens at the mailbox or bank when there's something to do, docks beside them, and closes with them.</li>
 						<li><strong>Your call:</strong> choose per character and per material who supplies what, or let the planner decide.</li>
+						<li><strong>Manual Transfers:</strong> send an alt an item or some gold, or ask one to send you something, apart from any queue. Drop a stack on the window; at the mailbox, Mail attaches exactly the right amount, splitting stacks for you.</li>
 					</ul>
 				</div>
 			</div>
@@ -251,9 +253,9 @@
 					<h3>Stop guessing whether a green is worth more as dust or as gold</h3>
 					<ul>
 						<li><strong>Disenchanting Mode</strong> lists every piece of gear you could disenchant, in your bags, your bank and on your alts, with search, sort, groups and filters (quality, bank items, set pieces, only what's worth it).</li>
-						<li><strong>What it's worth:</strong> possible results with their chances, and the value vendored, disenchanted and on the auction house, with the best choice highlighted.</li>
+						<li><strong>What it's worth:</strong> possible results with their chances, and the value vendored, disenchanted and on the auction house, with the best choice highlighted. Auction only wins when it beats the others by more than the listing deposit.</li>
 						<li><strong>Tooltip advice</strong> on every weapon and armour piece, plus your own recorded results next to the expected odds.</li>
-						<li><strong>No Enchanting here?</strong> See what to send your main enchanter.</li>
+						<li><strong>Gear on an alt?</strong> Add it to the transfer plan and they're asked to send it. <strong>No Enchanting here?</strong> See what to send your main enchanter.</li>
 					</ul>
 					<figure class="shot shot-inline">
 						<a href="assets/screenshots/disenchant-tooltip.png" class="zoom"><img src="assets/screenshots/disenchant-tooltip.png" alt="An item tooltip for Journeyman's Pants with the verdict Disenchant / Vendor / Auction, every result with its chance and value, and the rates seen in your own disenchants." width="685" height="450" loading="lazy"></a>
@@ -285,16 +287,40 @@
 				<div class="tour-text">
 					<p class="eyebrow">Quick buttons, Recipe Search and more</p>
 					<ul class="cols">
-						<li><strong>Quick buttons:</strong> a little bar for your windows and professions, usable without the main window, each with a count of what's waiting. Drag it anywhere.</li>
+						<li><strong>Quick buttons:</strong> a little bar for your windows and professions, usable without the main window, each with a count of what's waiting. Drag it anywhere, in rows or columns growing from any corner.</li>
+						<li><strong>Keys for everything:</strong> bind a key to any window, Disenchanting Mode or each of your professions, even with the bar hidden. Hover a button and press a key to bind it (<code>/pf bind</code>).</li>
 						<li><strong>Recipe Search:</strong> any recipe in the game, by name or by reagent, and which of your characters know it.</li>
 						<li><strong>Skill Up Route</strong> with SkillUp Forever: your levelling route, step by step.</li>
-						<li><strong>Tidy windows:</strong> side windows share a row of buttons, dock beside the main window (or the mailbox or bank), and always stay on screen.</li>
+						<li><strong>Tidy windows:</strong> side windows share a row of buttons, dock beside the main window (or the mailbox or bank), and always stay on screen. With six or more footer cells, the footer takes two rows.</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="features features-tail">
+			<article class="feature">
+				<h3>Camp <span class="new-tag">New</span></h3>
+				<ul>
+					<li>A <strong>Camp</strong> window (footer cell, quick button or <code>/pf camp</code>) for Forever's camp features: the tent, chair, campfire kits and every profession's camp feature.</li>
+					<li>Grouped by what's in your bags (with Place), what you can craft, what's on an alt and what you haven't learned, with the skill each needs.</li>
+					<li>The camp feature and campfire cooldowns at the top, on the Place buttons, the footer cell and the quick button.</li>
+				</ul>
+			</article>
+			<article class="feature">
+				<h3>One-Click Fishing <span class="new-tag">New</span></h3>
+				<ul>
+					<li>One key casts, and the same key catches when the fish bites. It only ever clicks your bobber.</li>
+					<li>Gets you ready first: your fishing gear set, best pole and best lure, then casts. Your normal gear goes back on when you mount, stop fishing or leave combat.</li>
+					<li><strong>Louder Fishing Sounds:</strong> effects turned up while your line is out, with music and ambience muted if you like.</li>
+				</ul>
+			</article>
+			<article class="feature">
+				<h3>Tooltips your way</h3>
+				<ul>
+					<li>Everything the addon adds to tooltips is under <strong>Options, Tooltips</strong>: each line on or off, the detail key, spacing, and the order of the blocks (drag them).</li>
+					<li>A live preview beside the options shows the result as you change it.</li>
+				</ul>
+			</article>
 			<article class="feature">
 				<h3>Navigation</h3>
 				<ul>
@@ -320,7 +346,7 @@
 		<h2 id="int-title">Even better with the addons you already use</h2>
 		<p class="lead">Everything is optional. Features that need a missing addon simply don't show, and each addon has its own page under Options, Integrations.</p>
 		<div class="integrations">
-			<div class="integration"><h3>Auctionator</h3><p>Prices, costs, profit, disenchant values and send-to-Auctionator.</p></div>
+			<div class="integration"><h3>Auctionator</h3><p>Prices, crafting costs and profit, disenchant values and send-to-Auctionator.</p></div>
 			<div class="integration"><h3>Syndicator</h3><p>Your bank and your other characters' bags, bank and mail.</p></div>
 			<div class="integration"><h3>Questie / QuestieDB</h3><p>More vendor, trainer and banker locations.</p></div>
 			<div class="integration"><h3>Polestar or TomTom</h3><p>Waypoints and the arrow. Polestar also prints multi-step routes.</p></div>
@@ -361,6 +387,7 @@
 							<tr><td>Queue a recipe</td><td><strong>Add to Queue</strong> in the recipe panel</td></tr>
 							<tr><td>Shop for missing reagents</td><td>Queue the recipe: the shopping list follows the queue</td></tr>
 							<tr><td>Get a waypoint</td><td>Right-click a reagent card, profession card or the <strong>From bank</strong> tile</td></tr>
+							<tr><td>Bind a key to a quick button</td><td><code>/pf bind</code>, hover the button and press a key; Escape to finish</td></tr>
 							<tr><td>Scale the window</td><td><kbd>Ctrl</kbd> + mouse wheel on the title bar</td></tr>
 						</tbody>
 					</table>
@@ -373,10 +400,13 @@
 						<thead><tr><th scope="col">Command</th><th scope="col">What it does</th></tr></thead>
 						<tbody>
 							<tr><td><code>/pf</code></td><td>Open or close the window</td></tr>
-							<tr><td><code>/pf queue</code>, <code>/pf shop</code>, <code>/pf transfer</code>, <code>/pf cd</code></td><td>Crafting queue, shopping list, Transfer Planner, cooldowns</td></tr>
+							<tr><td><code>/pf queue</code>, <code>/pf shop</code>, <code>/pf transfer</code>, <code>/pf cd</code>, <code>/pf camp</code></td><td>Crafting queue, shopping list, Transfer Planner, cooldowns, Camp</td></tr>
+							<tr><td><code>/pf track shop</code></td><td>Show or hide the shopping list on screen</td></tr>
 							<tr><td><code>/pf recipe</code>, <code>/pf reagent</code></td><td>Recipe Search by name or by reagent</td></tr>
 							<tr><td><code>/pf de</code></td><td>Disenchanting Mode</td></tr>
 							<tr><td><code>/pf route</code></td><td>Skill Up Route (with SkillUp Forever)</td></tr>
+							<tr><td><code>/pf bind</code></td><td>Bind keys to the quick buttons</td></tr>
+							<tr><td><code>/pf swapback</code></td><td>Put your normal gear back on after fishing</td></tr>
 							<tr><td><code>/pf whatsnew</code></td><td>What's new in this version</td></tr>
 							<tr><td><code>/pf options</code></td><td>Settings</td></tr>
 							<tr><td><code>/pf reset</code></td><td>Reset the window's position and size</td></tr>
@@ -388,7 +418,7 @@
 			</div>
 		</div>
 		<h3 class="table-title" id="settings">Settings</h3>
-		<p class="settings-text">Options are on pages: <strong>General</strong> (shopping list scope, disenchanting, the Transfer Planner at your bank or mailbox), <strong>Appearance</strong>, <strong>Quick Buttons</strong>, <strong>Tooltips</strong> (disenchant advice), <strong>Integrations</strong> (a page per supported addon, and Alt Inventory) and <strong>About</strong>. Every page has its own reset.</p>
+		<p class="settings-text">Options are sorted into categories: <strong>General</strong> (shopping list scope, Alt Inventory, the Transfer Planner at your bank or mailbox, notifications), <strong>Appearance</strong>, <strong>Quick Buttons</strong> (buttons and key bindings), <strong>Disenchanting</strong>, <strong>Tooltips</strong> (every line, with a live preview), <strong>One-Click Fishing</strong>, <strong>Integrations</strong> (a page per supported addon) and <strong>About</strong>. Each category has its own reset.</p>
 	</div>
 </section>
 
