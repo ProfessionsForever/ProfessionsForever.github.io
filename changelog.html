@@ -41,6 +41,8 @@
 		<h1 style="font-family: var(--font-head); font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 14px;">Changelog</h1>
 		<p class="lead">Every release and what changed in it. Download it from <a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a> or <a href="https://github.com/ProfessionsForever/Professions_Forever/releases">GitHub Releases</a>.</p>
 		<ul class="toc-versions">
+			<li><a href="#v0-10-5">0.10.5</a></li>
+			<li><a href="#v0-10-4">0.10.4</a></li>
 			<li><a href="#v0-10-3">0.10.3</a></li>
 			<li><a href="#v0-10-2">0.10.2</a></li>
 			<li><a href="#v0-10-1">0.10.1</a></li>
@@ -50,7 +52,59 @@
 			<li><a href="#v0-9-2">0.9.2</a></li>
 			<li><a href="#v0-9-1">0.9.1</a></li>
 		</ul>
-<h2 id="v0-10-3">0.10.3 <span class="badge">LATEST</span></h2>
+<h2 id="v0-10-5">0.10.5 <span class="badge">LATEST</span></h2>
+<h3>Added</h3>
+<ul>
+<li><strong>Crates and Writs:</strong> a new window (footer cell, quick button or <code>/pf crates</code>) lists the Waylaid Crates and Craftsman's Writs your characters hold, with what each pays, the cheapest way to fill it and the cost per Merchant's Favor or per reputation. Queue, Shop, Fill and Waypoint buttons act on a row, and a crate you hold several of has a box for how many to fill. Buy Crates and Buy Writs show what one bought at the auction house would cost once filled; Shop adds it to the shopping list and Ctrl-click searches the auction house. Crate and writ tooltips show the same pay and fill costs (Options, Tooltips, Crates and Writs).
+</li>
+<li><strong>Trainers:</strong> built in for 465 trainer-taught recipes, up from 32, on recipe tooltips, the recipe panel and its waypoint, with the skill and cost the trainer asks. New are Forever's own trainers and recipes (Zephras Isle, William Pickman, Camp Tent and the other camp recipes), the specialization trainers, Slagg, and the dungeon trainers Annora and Henry Stern, whose waypoint goes to the dungeon's entrance.
+</li>
+<li><strong>Vendors:</strong> built in for 725 recipes, Forever's own included, on the Sold By line and its waypoint, without Questie.
+</li>
+<li><strong>Recorded in Forever:</strong> 56 trainers, 201 vendors and 8 bankers recorded in game are built in, with the recipes those trainers teach.
+</li>
+<li><strong>New and Changed in Forever:</strong> a glowing infinity marks recipes new in Forever (gold) or changed in Forever (blue), in the recipe list and beside the name in the recipe panel. The recipe's tooltip says which, and what changed: reagents, result, trainer skill or trainer cost. Mark Recipes New or Changed in Forever is under Options, General, Main Window.
+</li>
+<li><strong>Auction price age,</strong> with Auctionator: "Auction Scan: 2h Ago" in the shopping list, Crates and Writs, Disenchanting Mode and the recipe panel's cost and profit tooltips, red once it is old. A single price not seen for a while is marked "(3 Days Old)". Show How Old Auction Prices Are and Prices Are Old After (24 hours by default) are under Options, Integrations, Auctionator.
+</li>
+<li><strong>Recipe tooltip beside the window:</strong> the recipe list's tooltip can dock left or right of the main window, level with the recipe or with the top of the list, with worn gear's comparison tooltips on the same side. It can also show only while the detail key is held. Options, Tooltips, Recipes.
+</li>
+<li><strong>Overview:</strong> a Blacksmithing, Leatherworking or Engineering card shows your specialization, with its icon and name.
+</li>
+<li><strong>Footer:</strong> Show Camp in the Footer and Show Crates and Writs in the Footer, under Options, General, Main Window, hide those cells.
+</li>
+<li><strong>What's New:</strong> Older and Newer buttons step through the notes of earlier versions.
+</li>
+<li><strong>About:</strong> credits for ForeverTDB, forever-db and QuestieDB.
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Crafting queue:</strong> clicking a recipe opens it in the main window, switching profession when needed. Stop Queue is its own button next to Craft Queue while the queue runs, and Stop Craft has a tooltip.
+</li>
+<li><strong>Mail:</strong> the Transfer Planner's Mail button puts short stacks together in your bags first and attaches the fewest stacks it can. It and Disenchanting Mode's Send Mail fill in an empty subject: Crafting Materials, Gear to Disenchant or Manual Transfer.
+</li>
+<li><strong>Auctionator shopping list:</strong> kept in sync with the shopping list automatically, so the Send to Auctionator button is gone. Keep Auctionator's Shopping List in Sync is under Options, Integrations, Auctionator.
+</li>
+<li><strong>Trainers and vendors in any game language:</strong> built-in and visited ones are matched to recipes by ID, not by English name. Earlier recordings are converted on login, and class and weapon trainers recorded by older versions are forgotten.
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Crafting queue:</strong> changing a row's count or removing a row updates the crafts queued to make its reagents, such as Smelt Bronze for bronze recipes, leaving crafts you queued yourself alone. A recipe you queued yourself, such as smelting bars, is no longer held back because a later recipe uses what it makes, only when one needs the same materials, and the chat message names that recipe.
+</li>
+<li><strong>Transfer Planner:</strong> Withdraw from Bank and Collect from Mailbox also fetch what this character has to send. Collect from Mailbox offers everything the bags are short, also when the bank holds it, with the row marked (or). Has on the rows to send, and Character Owns in Manual Transfers, count the mailbox.
+</li>
+<li><strong>Vendors for both factions:</strong> Darkmoon Faire vendors are offered at both faire sites, Mulgore and Elwynn Forest, and named as Darkmoon Faire. Neutral vendors, bankers and trainers you recorded on one faction are offered to the other too.
+</li>
+</ul>
+<h2 id="v0-10-4">0.10.4</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Queuing a recipe queued crafts of a reagent your other characters already hold, such as smelting bars your bank alt has. With alts counting toward planning, those are used first. Queue Needed and Crafts Into on item tooltips also leave out what is already held.
+</li>
+</ul>
+<h2 id="v0-10-3">0.10.3</h2>
 <h3>Added</h3>
 <ul>
 <li>A recipe's tooltip lists every trainer of your faction known to teach it, nearest first (up to 5, then "+N more"). The recipe panel names the nearest one, with how many others, and the waypoint goes to the nearest.
