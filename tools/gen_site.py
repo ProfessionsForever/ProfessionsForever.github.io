@@ -115,7 +115,7 @@ PAGE = """<!doctype html>
 	<title>Changelog: ProfessionsForever</title>
 	<meta name="description" content="Every ProfessionsForever release and what changed in it.">
 	<meta name="theme-color" content="#0e0c0a">
-	<link rel="canonical" href="https://professionsforever.github.io/Professions_Forever-website/changelog.html">
+	<link rel="canonical" href="https://professionsforever.github.io/changelog.html">
 	<link rel="icon" type="image/png" href="assets/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

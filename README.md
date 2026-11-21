@@ -36,4 +36,4 @@ Open `index.html` in a browser, or run `python3 -m http.server` here and visit h
 
 In the repository's **Settings, Pages**, choose **Deploy from a branch**, the `main` branch and the `/ (root)` folder.
 
-The site is published at https://professionsforever.github.io/Professions_Forever-website/. If it ever moves, update the canonical and `og:` links in `index.html`, the canonical link in `tools/gen_site.py`, and `sitemap.xml`.
+The site is published at https://professionsforever.github.io/. If it ever moves, update the canonical and `og:` links in `index.html`, the canonical link in `tools/gen_site.py`, and `sitemap.xml`.
