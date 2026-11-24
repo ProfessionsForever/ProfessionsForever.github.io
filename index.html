@@ -60,7 +60,7 @@
 			</a>
 		</div>
 		<div class="meta-line">
-			<span>Version 0.10.5</span>
+			<span>Version 0.10.6</span>
 			<span>Free and open source (GPL-3.0)</span>
 			<span>Built for WoW: Forever only</span>
 			<span>No required dependencies</span>
@@ -118,20 +118,20 @@
 		<div class="new-box">
 			<div class="new-text">
 				<p class="eyebrow">Latest release</p>
-				<h2 id="new-title">New in 0.10.5 <span class="badge">CURRENT</span></h2>
-				<p class="new-intro">What's arrived in 0.10.4 and 0.10.5.</p>
+				<h2 id="new-title">New in 0.10.6 <span class="badge">CURRENT</span></h2>
+				<p class="new-intro">What's arrived in 0.10.6.</p>
 				<ul class="new-list">
-					<li><strong>Crates and Writs:</strong> a new window (footer, quick button or <code>/pf crates</code>) lists the Waylaid Crates and Craftsman's Writs your characters hold, what each pays, the cheapest way to fill it and the cost per Merchant's Favor or reputation. Queue, Shop, Fill and Waypoint right from the row, and see what a crate or writ bought at the auction house would cost once filled.</li>
-					<li><strong>Trainers and vendors built in:</strong> 465 trainer-taught recipes (up from 32), with the skill and cost the trainer asks, and 725 vendor recipes, Forever's own trainers, vendors and camp recipes included. No Questie needed, and it works in any game language.</li>
-					<li><strong>New and Changed in Forever:</strong> a glowing infinity marks recipes that are new in Forever (gold) or changed in Forever (blue), and the tooltip says what changed: reagents, result, trainer skill or cost.</li>
-					<li><strong>How old is that price?</strong> With Auctionator, "Auction Scan: 2h Ago" shows in the shopping list, Crates and Writs, Disenchanting Mode and the cost and profit tooltips, turning red once it's old. Auctionator's shopping list now stays in sync by itself.</li>
-					<li><strong>Chains use what your alts hold:</strong> queuing a recipe no longer queues smelting bars your bank alt already has. With alts counting toward planning, what they hold is used first.</li>
-					<li><strong>And more:</strong> the recipe tooltip can dock beside the window, your specialization on the Overview, Older and Newer buttons in What's New, smarter mail that stacks before it attaches, Stop Queue as its own button, and fixes for the queue, the Transfer Planner and Darkmoon Faire vendors.</li>
+					<li><strong>Recipe Scout:</strong> enter a zone and a window lists the recipes there you haven't learned: from vendors, trainers, quests, and the creatures and chests that drop them, dungeons included, with the skill each needs. Click to open a recipe, right-click for a waypoint, <kbd>Shift</kbd>-click to ignore one, and pin the window to follow you from zone to zone. <code>/pf scout</code> opens it again.</li>
+					<li><strong>Where recipes come from:</strong> tooltips and the recipe panel name the quest and quest giver for 103 quest recipes, and where a recipe drops, with a waypoint to the giver, the drop or the dungeon's entrance. Limited supply follows what Forever's vendors really sell.</li>
+					<li><strong>Search the auction house:</strong> with the auction house open, a Search button in the recipe panel searches Auctionator's Shopping tab for what the recipe makes and all its reagents.</li>
+					<li><strong>Lure or no lure:</strong> One-Click Fishing has a key to skip the lure for a cast, or to add one when you normally fish without.</li>
+					<li><strong>Your language, your font:</strong> the default font is now the game's own for your client's language, so Korean, Chinese and Russian text shows.</li>
+					<li><strong>And more:</strong> <kbd>Shift</kbd>-click in the addon's windows only links or searches, <kbd>Shift</kbd>-click a recipe to track it, Crates and Writs' Fill counts down, and fixes.</li>
 </ul>
 				<a class="btn" href="changelog.html">Read the full changelog</a>
 			</div>
 			<figure class="shot new-shot">
-				<a href="assets/screenshots/whats-new.png" class="zoom"><img src="assets/screenshots/whats-new.png" alt="The What's New window in game, listing the highlights of version 0.10.5: Crates and Writs, who teaches and sells each recipe, New and Changed in Forever, and how old auction prices are." width="878" height="920" loading="lazy"></a>
+				<a href="assets/screenshots/whats-new.png" class="zoom"><img src="assets/screenshots/whats-new.png" alt="The What's New window in game, listing the highlights of version 0.10.6: Recipe Scout, where recipes come from, searching the auction house, the One-Click Fishing lure key, and the Game Default font." width="878" height="843" loading="lazy"></a>
 				<figcaption>What's New</figcaption>
 			</figure>
 		</div>
@@ -275,7 +275,7 @@
 				</figure>
 				<div class="tour-text">
 					<p class="eyebrow">Crates and Writs</p>
-					<h3>Which crate is worth filling? <span class="new-tag">New</span></h3>
+					<h3>Which crate is worth filling?</h3>
 					<p>Footer cell, quick button or <code>/pf crates</code>.</p>
 					<ul>
 						<li>Every Waylaid Crate and Craftsman's Writ your characters hold, with what each pays, the cheapest way to fill it and the cost per Merchant's Favor or per reputation.</li>
@@ -341,10 +341,19 @@
 
 		<div class="features features-tail">
 			<article class="feature">
+				<h3>Recipe Scout <span class="new-tag">New</span></h3>
+				<ul>
+					<li>Enter a zone and a window lists the recipes you haven't learned that you can get there: vendors (marked when their supply is limited), trainers, quests, and the creatures and chests that drop them. In a dungeon, what its creatures and chests drop.</li>
+					<li>Click to open a recipe, right-click for a waypoint to whoever sells, teaches, gives or drops it, <kbd>Shift</kbd>-click to ignore it in that zone.</li>
+					<li>Leaves out other specializations' recipes and Darkmoon Faire merchants who are out of town. Pin it to follow you from zone to zone, or open it with <code>/pf scout</code>.</li>
+				</ul>
+			</article>
+			<article class="feature">
 				<h3>One-Click Fishing</h3>
 				<ul>
 					<li>One key casts, and the same key catches when the fish bites. It only ever clicks your bobber.</li>
 					<li>Gets you ready first: your fishing gear set, best pole and best lure, then casts. Your normal gear goes back on when you mount, stop fishing or leave combat.</li>
+					<li><strong>Lure or no lure:</strong> hold <kbd>Shift</kbd>, <kbd>Ctrl</kbd> or <kbd>Alt</kbd> to cast without the lure, or, if you fish without lures, to put one on just this once.</li>
 					<li><strong>Louder Fishing Sounds:</strong> effects turned up while your line is out, with music and ambience muted if you like.</li>
 				</ul>
 			</article>
@@ -360,6 +369,7 @@
 				<h3>Navigation</h3>
 				<ul>
 					<li>Waypoints through Polestar or TomTom to vendors, trainers and bankers, with trainers for 465 recipes and vendors for 725 built in, Forever's own included. No Questie needed, in any game language.</li>
+					<li>Quest givers for 103 quest recipes, and where recipes drop, with waypoints to the giver, the drop or the dungeon's entrance.</li>
 					<li><strong>It learns:</strong> trainers, vendors and bankers you visit are remembered, so it gets better as you play.</li>
 				</ul>
 			</article>
@@ -367,7 +377,7 @@
 				<h3>Look and feel</h3>
 				<ul>
 					<li><strong>Five skins:</strong> Modern Dark, Blackout, Classic and Minimal, plus EllesmereUI when it's installed.</li>
-					<li><strong>Make it yours:</strong> font, size, scale, opacity and accent colour. Your Professions keybind and the micro-menu button open this window.</li>
+					<li><strong>Make it yours:</strong> font (the game's own for your language by default), size, scale, opacity and accent colour. Your Professions keybind and the micro-menu button open this window.</li>
 				</ul>
 			</article>
 		</div>
@@ -381,7 +391,7 @@
 		<h2 id="int-title">Even better with the addons you already use</h2>
 		<p class="lead">Everything is optional. Features that need a missing addon simply don't show, and each addon has its own page under Options, Integrations.</p>
 		<div class="integrations">
-			<div class="integration"><h3>Auctionator</h3><p>Prices and how old they are, crafting costs and profit, disenchant values, crate and writ costs, and a synced shopping list.</p></div>
+			<div class="integration"><h3>Auctionator</h3><p>Prices and how old they are, crafting costs and profit, disenchant values, crate and writ costs, a synced shopping list, and a Search button for a recipe and its reagents.</p></div>
 			<div class="integration"><h3>Syndicator</h3><p>Your bank and your other characters' bags, bank and mail.</p></div>
 			<div class="integration"><h3>Questie / QuestieDB</h3><p>More vendor, trainer and banker locations.</p></div>
 			<div class="integration"><h3>Polestar or TomTom</h3><p>Waypoints and the arrow. Polestar also prints multi-step routes.</p></div>
@@ -435,7 +445,7 @@
 						<thead><tr><th scope="col">Command</th><th scope="col">What it does</th></tr></thead>
 						<tbody>
 							<tr><td><code>/pf</code></td><td>Open or close the window</td></tr>
-							<tr><td><code>/pf queue</code>, <code>/pf shop</code>, <code>/pf transfer</code>, <code>/pf cd</code>, <code>/pf camp</code>, <code>/pf crates</code></td><td>Crafting queue, shopping list, Transfer Planner, cooldowns, Camp, Crates and Writs</td></tr>
+							<tr><td><code>/pf queue</code>, <code>/pf shop</code>, <code>/pf transfer</code>, <code>/pf cd</code>, <code>/pf camp</code>, <code>/pf crates</code>, <code>/pf scout</code></td><td>Crafting queue, shopping list, Transfer Planner, cooldowns, Camp, Crates and Writs, Recipe Scout</td></tr>
 							<tr><td><code>/pf track shop</code></td><td>Show or hide the shopping list on screen</td></tr>
 							<tr><td><code>/pf recipe</code>, <code>/pf reagent</code></td><td>Recipe Search by name or by reagent</td></tr>
 							<tr><td><code>/pf de</code></td><td>Disenchanting Mode</td></tr>
@@ -453,7 +463,7 @@
 			</div>
 		</div>
 		<h3 class="table-title" id="settings">Settings</h3>
-		<p class="settings-text">Options are sorted into categories: <strong>General</strong> (shopping list scope, Alt Inventory, the Transfer Planner at your bank or mailbox, notifications), <strong>Appearance</strong>, <strong>Quick Buttons</strong> (buttons and key bindings), <strong>Disenchanting</strong>, <strong>Tooltips</strong> (every line, with a live preview), <strong>One-Click Fishing</strong>, <strong>Integrations</strong> (a page per supported addon) and <strong>About</strong>. Each category has its own reset.</p>
+		<p class="settings-text">Options are sorted into categories: <strong>General</strong> (shopping list scope, Alt Inventory, the Transfer Planner at your bank or mailbox, notifications, Recipe Scout), <strong>Appearance</strong>, <strong>Quick Buttons</strong> (buttons and key bindings), <strong>Disenchanting</strong>, <strong>Tooltips</strong> (every line, with a live preview), <strong>One-Click Fishing</strong>, <strong>Integrations</strong> (a page per supported addon) and <strong>About</strong>. Each category has its own reset.</p>
 	</div>
 </section>
 
