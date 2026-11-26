@@ -36,7 +36,7 @@
 			<a href="changelog.html">Changelog</a>
 			<a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a>
 			<a href="https://discord.gg/Ay4E5GEhA2">Discord</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever">GitHub</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever">GitHub</a>
 		</nav>
 	</div>
 </header>
@@ -53,7 +53,7 @@
 				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>
 				Download on CurseForge
 			</a>
-			<a class="btn" href="https://github.com/ProfessionsForever/Professions_Forever/releases/latest">GitHub Releases</a>
+			<a class="btn" href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/releases/latest">GitHub Releases</a>
 			<a class="btn" href="https://discord.gg/Ay4E5GEhA2">
 				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
 				Join the Discord
@@ -105,8 +105,8 @@
 			</div>
 			<div class="pillar">
 				<div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5 5-2z"/></svg></div>
-				<h3>Where to go next</h3>
-				<p>Waypoints to the vendor, trainer or banker you need, with locations built in. No Questie needed.</p>
+				<h3>Every recipe in reach</h3>
+				<p>Walk into a zone and Recipe Scout lists the recipes you can pick up there. Waypoints take you to the vendor, trainer, quest giver or banker you need, with locations built in. No Questie needed.</p>
 			</div>
 		</div>
 	</div>
@@ -115,7 +115,7 @@
 <!-- What's new -->
 <section id="new" aria-labelledby="new-title">
 	<div class="wrap">
-		<div class="new-box no-shot">
+		<div class="new-box">
 			<div class="new-text">
 				<p class="eyebrow">Latest release</p>
 				<h2 id="new-title">New in 0.10.7 <span class="badge">CURRENT</span></h2>
@@ -129,6 +129,10 @@
 				</ul>
 				<a class="btn" href="changelog.html">Read the full changelog</a>
 			</div>
+			<figure class="shot new-shot">
+				<a href="assets/screenshots/whats-new.png" class="zoom"><img src="assets/screenshots/whats-new.png" alt="The What's New window in game for version 0.10.6: Recipe Scout, where recipes come from, searching the auction house, the One-Click Fishing lure key, the game's own font for your language, and more." width="881" height="837" loading="lazy"></a>
+				<figcaption>0.10.6's What's New: Recipe Scout and more</figcaption>
+			</figure>
 		</div>
 	</div>
 </section>
@@ -173,6 +177,25 @@
 						<li>Color-coded by skill up difficulty, with the skill up chance on each recipe and a stripe for whether the materials are in your bags, bank, partly there or missing.</li>
 						<li>Unlearned recipes say where they come from and what skill they need, with every trainer of your faction that teaches it, nearest first, and the skill and cost they ask. <kbd>Ctrl</kbd>-click to preview gear in the dressing room.</li>
 						<li><strong>Made for Forever:</strong> a glowing infinity marks recipes new in Forever (gold) or changed in Forever (blue), and the tooltip says what changed.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="tour-row" id="scout">
+				<figure class="shot shot-narrow">
+					<a href="assets/screenshots/recipe-scout.png" class="zoom"><img src="assets/screenshots/recipe-scout.png" alt="The Recipe Scout window for Stormwind City: unlearned Tailoring and Enchanting recipes grouped by profession, each with the vendor or trainer who has it, one vendor marked Limited Supply, the skill each requires in red or green, and a Zone Drops Only dropdown." width="672" height="688" loading="lazy"></a>
+					<figcaption>Recipe Scout in Stormwind City</figcaption>
+				</figure>
+				<div class="tour-text">
+					<p class="eyebrow">Recipe Scout</p>
+					<h3>Every recipe you can get, wherever you are</h3>
+					<p>It opens as you arrive in a zone, or with <code>/pf scout</code>.</p>
+					<ul>
+						<li>Every recipe you haven't learned that the zone's vendors sell, trainers teach, quests reward, or creatures and chests drop, grouped by profession with the skill each needs. In a dungeon or raid, what its creatures and chests drop.</li>
+						<li>Vendors with a limited supply are marked, and holiday vendors and quests only show while the holiday is on.</li>
+						<li>Click to open a recipe, right-click for a waypoint to whoever sells, teaches, gives or drops it, <kbd>Shift</kbd>-click to ignore it in that zone.</li>
+						<li><strong>Only what's useful:</strong> other specializations' recipes, creatures friendly to your side and Darkmoon Faire merchants who are out of town are left out. List only the drops you'll find nowhere else, and pin the window to follow you from zone to zone.</li>
+						<li><strong>Already bought?</strong> A recipe in your bags, bank or mailbox waiting to be learned says where it is.</li>
 					</ul>
 				</div>
 			</div>
@@ -338,14 +361,6 @@
 
 		<div class="features features-tail">
 			<article class="feature">
-				<h3>Recipe Scout</h3>
-				<ul>
-					<li>Enter a zone and a window lists the recipes you haven't learned that you can get there: vendors (marked when their supply is limited), trainers, quests, and the creatures and chests that drop them. In a dungeon, what its creatures and chests drop.</li>
-					<li>Click to open a recipe, right-click for a waypoint to whoever sells, teaches, gives or drops it, <kbd>Shift</kbd>-click to ignore it in that zone.</li>
-					<li>Leaves out other specializations' recipes and Darkmoon Faire merchants who are out of town. Pin it to follow you from zone to zone, or open it with <code>/pf scout</code>.</li>
-				</ul>
-			</article>
-			<article class="feature">
 				<h3>One-Click Fishing</h3>
 				<ul>
 					<li>One key casts, and the same key catches when the fish bites. It only ever clicks your bobber.</li>
@@ -406,7 +421,7 @@
 		<p class="lead">ProfessionsForever is built for <strong>WoW: Forever</strong> only.</p>
 		<ol class="steps">
 			<li><strong>Install from CurseForge</strong>Search for ProfessionsForever in the CurseForge app, or download it from the <a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge page</a>. The app installs and updates it for you.</li>
-			<li><strong>Or install by hand</strong>Download the zip from CurseForge or <a href="https://github.com/ProfessionsForever/Professions_Forever/releases/latest">GitHub Releases</a> and put the <code>ProfessionsForever</code> folder in <code>World of Warcraft/<wbr>&lt;client&gt;/<wbr>Interface/<wbr>AddOns/</code>.</li>
+			<li><strong>Or install by hand</strong>Download the zip from CurseForge or <a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/releases/latest">GitHub Releases</a> and put the <code>ProfessionsForever</code> folder in <code>World of Warcraft/<wbr>&lt;client&gt;/<wbr>Interface/<wbr>AddOns/</code>.</li>
 			<li><strong>Start the game</strong>Log in, or type <code>/reload</code> if you're already playing. Open your professions as usual, or type <code>/pf</code>.</li>
 		</ol>
 	</div>
@@ -484,7 +499,7 @@
 			</details>
 			<details>
 				<summary>A vendor or trainer location is wrong</summary>
-				<p>Vendor and trainer locations come from community data and may not be right everywhere. Let us know on <a href="https://discord.gg/Ay4E5GEhA2">Discord</a> or <a href="https://github.com/ProfessionsForever/Professions_Forever/issues">GitHub</a> when one is off.</p>
+				<p>Vendor and trainer locations come from community data and may not be right everywhere. Let us know on <a href="https://discord.gg/Ay4E5GEhA2">Discord</a> or <a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/issues">GitHub</a> when one is off.</p>
 			</details>
 			<details>
 				<summary>Does it mail items for me?</summary>
@@ -506,7 +521,7 @@
 		<p class="lead">Ask on Discord, report bugs and ideas on GitHub, or email <a href="mailto:professionsforever@gmail.com">professionsforever@gmail.com</a>.</p>
 		<div class="cta">
 			<a class="btn btn-primary" href="https://discord.gg/Ay4E5GEhA2">Join the Discord</a>
-			<a class="btn" href="https://github.com/ProfessionsForever/Professions_Forever/issues">Bug reports and ideas</a>
+			<a class="btn" href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/issues">Bug reports and ideas</a>
 			<a class="btn" href="https://ko-fi.com/professionsforever">
 				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8zM6 2v2M10 2v2M14 2v2"/></svg>
 				Like it? Support on Ko-fi
@@ -521,14 +536,14 @@
 	<div class="wrap">
 		<div class="footer-links">
 			<a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever">Source code</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever/releases">Releases</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever">Source code</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/releases">Releases</a>
 			<a href="changelog.html">Changelog</a>
 			<a href="https://discord.gg/Ay4E5GEhA2">Discord</a>
 			<a href="https://ko-fi.com/professionsforever">Ko-fi</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever/blob/main/LICENSE">License (GPL-3.0)</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/blob/main/LICENSE">License (GPL-3.0)</a>
 		</div>
-		<p>ProfessionsForever is free software under the GNU General Public License, version 3. The source is on <a href="https://github.com/ProfessionsForever/Professions_Forever">GitHub</a>.</p>
+		<p>ProfessionsForever is free software under the GNU General Public License, version 3. The source is on <a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever">GitHub</a>.</p>
 		<p>Trainer, vendor and banker locations and the disenchant odds come from the <a href="https://github.com/cmangos/classic-db">cmangos classic-db</a> project (GPL-3.0); the trainers added in Forever from <a href="https://github.com/advocaite/TrinityCore">ForeverTDB</a> (GPL-2.0 or later); recipe vendors, drops and quest rewards from <a href="https://github.com/foreverfraddons/forever-db">forever-db</a> (GPL-3.0) and <a href="https://github.com/Questie/QuestieDB">QuestieDB</a>; recipe and item data from the wago.tools tables for WoW: Forever. World of Warcraft is a trademark of Blizzard Entertainment. This project is not affiliated with or endorsed by Blizzard Entertainment.</p>
 	</div>
 </footer>

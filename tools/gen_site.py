@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "changelog.html"
-CHANGELOG_URL = "https://raw.githubusercontent.com/ProfessionsForever/Professions_Forever/main/CHANGELOG.md"
+CHANGELOG_URL = "https://raw.githubusercontent.com/ThreeLightsInTheDark/ProfessionsForever/main/CHANGELOG.md"
 
 
 def inline(text):
@@ -138,7 +138,7 @@ PAGE = """<!doctype html>
 			<a href="changelog.html" aria-current="page">Changelog</a>
 			<a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a>
 			<a href="https://discord.gg/Ay4E5GEhA2">Discord</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever">GitHub</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever">GitHub</a>
 		</nav>
 	</div>
 </header>
@@ -148,7 +148,7 @@ PAGE = """<!doctype html>
 	<div class="wrap changelog">
 		<p class="eyebrow">Release notes</p>
 		<h1 style="font-family: var(--font-head); font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 14px;">Changelog</h1>
-		<p class="lead">Every release and what changed in it. Download it from <a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a> or <a href="https://github.com/ProfessionsForever/Professions_Forever/releases">GitHub Releases</a>.</p>
+		<p class="lead">Every release and what changed in it. Download it from <a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a> or <a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/releases">GitHub Releases</a>.</p>
 		<ul class="toc-versions">
 %(toc)s
 		</ul>
@@ -162,8 +162,8 @@ PAGE = """<!doctype html>
 		<div class="footer-links">
 			<a href="./">Home</a>
 			<a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever">Source code</a>
-			<a href="https://github.com/ProfessionsForever/Professions_Forever/releases">Releases</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever">Source code</a>
+			<a href="https://github.com/ThreeLightsInTheDark/ProfessionsForever/releases">Releases</a>
 			<a href="https://discord.gg/Ay4E5GEhA2">Discord</a>
 		</div>
 		<p>World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. This project is not affiliated with or endorsed by Blizzard Entertainment.</p>

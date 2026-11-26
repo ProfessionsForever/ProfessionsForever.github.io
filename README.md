@@ -1,6 +1,6 @@
 # ProfessionsForever website
 
-The website for the [ProfessionsForever](https://github.com/ProfessionsForever/Professions_Forever) addon for WoW: Forever. It is plain HTML and CSS, with no build step and no dependencies.
+The website for the [ProfessionsForever](https://github.com/ThreeLightsInTheDark/ProfessionsForever) addon for WoW: Forever. It is plain HTML and CSS, with no build step and no dependencies.
 
 | File | Purpose |
 | --- | --- |
@@ -23,7 +23,7 @@ python3 tools/gen_site.py
 It downloads `CHANGELOG.md` from the addon repository's `main` branch and rebuilds `changelog.html`. To build from a local changelog that isn't pushed yet, pass its path:
 
 ```sh
-python3 tools/gen_site.py ../Professions_Forever/CHANGELOG.md
+python3 tools/gen_site.py ../ProfessionsForever/CHANGELOG.md
 ```
 
 When a release changes the headline features or the version, update `index.html` by hand: the version under the buttons, the "New in" section, and the feature cards.
