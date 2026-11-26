@@ -41,6 +41,7 @@
 		<h1 style="font-family: var(--font-head); font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 14px;">Changelog</h1>
 		<p class="lead">Every release and what changed in it. Download it from <a href="https://www.curseforge.com/wow/addons/professionsforever">CurseForge</a> or <a href="https://github.com/ProfessionsForever/Professions_Forever/releases">GitHub Releases</a>.</p>
 		<ul class="toc-versions">
+			<li><a href="#v0-10-7">0.10.7</a></li>
 			<li><a href="#v0-10-6">0.10.6</a></li>
 			<li><a href="#v0-10-5">0.10.5</a></li>
 			<li><a href="#v0-10-4">0.10.4</a></li>
@@ -53,7 +54,37 @@
 			<li><a href="#v0-9-2">0.9.2</a></li>
 			<li><a href="#v0-9-1">0.9.1</a></li>
 		</ul>
-<h2 id="v0-10-6">0.10.6 <span class="badge">LATEST</span></h2>
+<h2 id="v0-10-7">0.10.7 <span class="badge">LATEST</span></h2>
+<h3>Added</h3>
+<ul>
+<li><strong>Sale Price sort:</strong> with Auctionator, the recipe list can sort by what a craft's items sell for at the auction house, whatever the reagents cost. The sort menu is now in alphabetical order.
+</li>
+<li><strong>Skill ups in the crafting queue:</strong> each row shows its skill up color and chance, and "+3" for the skill ups its crafts should give, worked out top to bottom as your skill rises. The status line shows the skill the queue should take each profession to, and a row's tooltip says when the recipe turns its next color. The chance follows Options, General, Show Skill Up Chance in the Recipe List and Queue.
+</li>
+<li><strong>Buy List asks first:</strong> the Buy List button on a vendor's window lists what it will buy and the total, and buys on OK. Options, General, Shopping List, Confirm Before Buy List Buys turns it off.
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Drop-down menus:</strong> have a thin shadow around them, so their edges stand out over the window behind.
+</li>
+<li><strong>Text colors:</strong> gray secondary text is a darker slate and light text a little brighter, so the two are easier to tell apart from white.
+</li>
+<li><strong>What's New:</strong> after skipping updates, it shows the notes of each version you missed, oldest first, with a Next button stepping to the newest.
+</li>
+<li><strong>Holiday sources:</strong> recipe tooltips name the holiday a vendor or quest is only there for, such as "Fariel Starsong (Moonglade, Lunar Festival)" or the Feast of Winter Veil's Smokywood Pastures vendors.
+</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Find a Trainer:</strong> no longer sends you to a trainer for a rank it doesn't teach, such as Trixie Quikswitch for Artisan Engineering. Opening a trainer corrects what was recorded about its ranks.
+</li>
+<li><strong>Skill up chance on your other characters:</strong> viewing another character's profession no longer records that character's Overtime talent bonus as yours.
+</li>
+<li><strong>Shift-click with TradeSkillMaster:</strong> at the auction house, Shift-clicking an item in the addon's windows (a reagent, the recipe panel's item card, a shopping list row and the others) searches it in TradeSkillMaster's open auction tab, as Blizzard's professions window does. As there, it searches only when no chat box is open; with one open, the link goes in chat.
+</li>
+</ul>
+<h2 id="v0-10-6">0.10.6</h2>
 <h3>Added</h3>
 <ul>
 <li><strong>Recipe Scout:</strong> entering a zone opens a window listing the recipes you have not learned that you can get there: sold by a vendor (marked Limited Supply), taught by a trainer, rewarded by a quest, or dropped by a creature or held by a chest or other object, with the skill each needs. Inside a dungeon or raid it lists what its creatures and chests drop. It opens once per zone each session, and <code>/pf scout</code> opens it again. Click a recipe to open it, right-click for a waypoint to its vendor, trainer, quest giver or drop, Shift-click to ignore it in that zone for this character (Show Ignored lists them again). A recipe you already bought says whether it is in your bags, bank or mailbox. Recipes of a specialization you do not have, creatures friendly to your side, Darkmoon Faire merchants while the faire is elsewhere and Winter Veil vendors outside the Feast of Winter Veil are left out. The Drops dropdown lists all drops, only the recipes that drop nowhere but in the zone, or none. The window reopens where you dragged it, and its pin keeps it open and lists each zone you enter. Opening a vendor records which recipes it sells in a limited supply, and the window follows that. Options, General, Recipe Scout turns off opening on its own, pins the window and chooses what it lists.
@@ -268,7 +299,7 @@
 <h2 id="v0-10-1">0.10.1</h2>
 <h3>Fixed</h3>
 <ul>
-<li>Enchanting gear in the trade window, for another player, wasn't possible: the Enchant button stayed grey until you chose an item, and the item in the trade window's "Will not be traded" slot can't be chosen. As in Blizzard's window, Enchant now works with no item chosen: click it, then click the item in the trade window (or any item) with the glowing cursor.
+<li>Enchanting gear in the trade window, for another player, wasn't possible: the Enchant button stayed gray until you chose an item, and the item in the trade window's "Will not be traded" slot can't be chosen. As in Blizzard's window, Enchant now works with no item chosen: click it, then click the item in the trade window (or any item) with the glowing cursor.
 </li>
 <li>Updating past a version (say from 0.9.4 straight to 0.10.1) skipped the What's New window, since only the newest version's notes were looked for. It now shows the newest notes you haven't seen, so 0.10.0's notes still show after updating to 0.10.1, and <code>/pf whatsnew</code> still opens them.
 </li>
@@ -284,15 +315,15 @@
 </li>
 <li>Trainer, banker and vendor locations now ship with the addon (from the cmangos classic-db project), so waypoints to profession trainers, bankers and reagent or recipe vendors work without Questie. NPCs you open in game still take priority.
 </li>
-<li>Skill Up chance on each learned recipe in the list (such as 75%), in the recipe's difficulty colour and gone once it turns grey. It is worked out from the same skill thresholds the game uses for the colours. Turn it off under Options, General. The recipe panel also shows it under the recipe name, and the list can be sorted by it (Sort: Skill Up Chance, highest first).
+<li>Skill Up chance on each learned recipe in the list (such as 75%), in the recipe's difficulty color and gone once it turns gray. It is worked out from the same skill thresholds the game uses for the colors. Turn it off under Options, General. The recipe panel also shows it under the recipe name, and the list can be sorted by it (Sort: Skill Up Chance, highest first).
 </li>
-<li>New Blackout skin: the EllesmereUI look (black windows, thin grey borders) without needing EllesmereUI.
+<li>New Blackout skin: the EllesmereUI look (black windows, thin gray borders) without needing EllesmereUI.
 </li>
 <li>New scrollbars in every skin.
 </li>
 <li>Another player's profession, opened from a chat link, now opens in this window. It is read-only: crafting, queueing, tracking and favorites are off, and your own materials are still counted.
 </li>
-<li>Skill Up Route: with SkillUp Forever installed, a footer window (and <code>/pf route</code>) shows its levelling route for each profession: the next train, buy, gather and craft steps and the reagents they need. Click a step to set a waypoint to its trainer or vendor, or to open the recipe to craft.
+<li>Skill Up Route: with SkillUp Forever installed, a footer window (and <code>/pf route</code>) shows its leveling route for each profession: the next train, buy, gather and craft steps and the reagents they need. Click a step to set a waypoint to its trainer or vendor, or to open the recipe to craft.
 </li>
 <li>Quick buttons: a small bar of icons that opens the cooldowns, transfer planner, shopping list and crafting queue without the main window, each with a count of what is waiting (ready cooldowns, alts to visit, items to buy, queued recipes). It also has a button for each profession with a crafting window, which opens it like its tab, including Forever's camp crafting in Herbalism and Fishing; turn those off under Options, Quick Buttons. With SkillUp Forever installed it also has a Skill Up Route button, whose tooltip shows the next step; it can be turned off under Integrations. On a character that knows Disenchant, a Disenchanting Mode button opens Enchanting straight into Disenchanting Mode, or turns the mode on and off while Enchanting is open (not in combat). On a character without Enchanting it lists the gear you could send your best enchanter (same faction first, then highest skill) instead; right-click it to pick another enchanter. If you have more than one enchanter, pick your main one under Options, General, Disenchanting, or at the bottom of that right-click menu, and it comes first everywhere. <code>/pf de</code> does the same; on an enchanter it can't open Enchanting itself, so a macro of <code>/cast Enchanting</code> then <code>/pf de</code> opens it straight into the mode. On a character without Enchanting, the Overview also has a Disenchanting Mode icon next to the character picker that does the same. Under Options, Quick Buttons, set how many buttons go in a row and which way they grow (left or right, up or down); while unlocked, a handle marks the corner they grow from and drags the bar.
 </li>
@@ -300,11 +331,11 @@
 </li>
 <li>Disenchanting Mode: on the Enchanting tab (the dust icon next to the Disenchant button, or the same icon on the Overview's Enchanting card) swaps the recipes for the gear in your bags and bank that can be disenchanted (the bank as it was on your last visit). Pick an item to see what it may give, with chances, and whether it is worth more sold to a vendor, disenchanted or sold at auction (with Auctionator, after the auction house cut). The Disenchant button casts Disenchant on it. Items in an equipment set are marked with a warning, and disenchanting one asks you to confirm first. "Back to Recipes" at the top of the list leaves the mode. The search, sort, category, row spacing and filter controls work as in the recipe list: search suggests item names as you type; sort by name, item level, quality or best value, either way round; pick a group (your bags, your bank or one of your other characters) or collapse and expand them; and a Filters menu shows or hides other characters' gear, bank items, each quality (uncommon, rare, epic) and equipment set pieces, or only the items worth more disenchanted (needs Auctionator). Your other characters' unbound gear is listed too, grouped by character, with which of their bags or bank it is in, so you can see what they could mail you to disenchant; each character's gear is saved when it logs in and visits its bank (with Syndicator, characters not logged in since this version show what Syndicator recorded). Characters turned off on the Alt Inventory page and of the other faction are left out.
 </li>
-<li>Disenchant results on item tooltips: weapons and armour that can be disenchanted say what to do with them, the same verdict as Disenchanting Mode: a "Disenchant / Vendor / Auction" line with the best choice lit in its colour and the others grey, and what it earns after the 5% auction house cut (needs Auctionator; without prices the line shows the likeliest disenchant result, such as Strange Dust x1-2). Hold Shift to see each choice's value, and every disenchant result with its chance, amount and value. A new Tooltips options page turns it off and picks when it shows (always or only with Shift), how much it shows (one line, every result, or one line with every result on Shift), whether it leads with the best choice or just the disenchant value, and whether a character needs Enchanting: any of yours (the default), this one, or none, so a main without Enchanting can see what to vendor and what to send to an enchanter. Soulbound gear only shows it on a character that knows Enchanting, since it can't be mailed to one (can be turned off). While Auctionator's own disenchant tooltips are on, ProfessionsForever leaves its lines out; that can be turned off under Integrations.
+<li>Disenchant results on item tooltips: weapons and armor that can be disenchanted say what to do with them, the same verdict as Disenchanting Mode: a "Disenchant / Vendor / Auction" line with the best choice lit in its color and the others gray, and what it earns after the 5% auction house cut (needs Auctionator; without prices the line shows the likeliest disenchant result, such as Strange Dust x1-2). Hold Shift to see each choice's value, and every disenchant result with its chance, amount and value. A new Tooltips options page turns it off and picks when it shows (always or only with Shift), how much it shows (one line, every result, or one line with every result on Shift), whether it leads with the best choice or just the disenchant value, and whether a character needs Enchanting: any of yours (the default), this one, or none, so a main without Enchanting can see what to vendor and what to send to an enchanter. Soulbound gear only shows it on a character that knows Enchanting, since it can't be mailed to one (can be turned off). While Auctionator's own disenchant tooltips are on, ProfessionsForever leaves its lines out; that can be turned off under Integrations.
 </li>
-<li>Disenchant results are now recorded: each time one of your characters disenchants an item, what it gave is saved account-wide, by item quality, type and level, along with the WoW build. This is the groundwork for checking the disenchant chances against what Forever really drops. Turn it off under Options, General. How often you've really seen each result, and how many of it you got on average, show under its chance and amount in Disenchanting Mode ("seen 75%", "seen 1.7") and on item tooltips with every result shown, added up across your characters for each kind of item, with how many disenchants that is and any results the table doesn't list. Under the Disenchant value, "seen" shows what your disenchants of that kind were really worth on average, at today's auction prices (it doesn't change which choice is best). It is greyed and marked unreliable until 100 disenchants of that kind are recorded. Turn it off under Options, General, Show Seen Rates.
+<li>Disenchant results are now recorded: each time one of your characters disenchants an item, what it gave is saved account-wide, by item quality, type and level, along with the WoW build. This is the groundwork for checking the disenchant chances against what Forever really drops. Turn it off under Options, General. How often you've really seen each result, and how many of it you got on average, show under its chance and amount in Disenchanting Mode ("seen 75%", "seen 1.7") and on item tooltips with every result shown, added up across your characters for each kind of item, with how many disenchants that is and any results the table doesn't list. Under the Disenchant value, "seen" shows what your disenchants of that kind were really worth on average, at today's auction prices (it doesn't change which choice is best). It is grayed and marked unreliable until 100 disenchants of that kind are recorded. Turn it off under Options, General, Show Seen Rates.
 </li>
-<li>Browse your other characters' professions: a character dropdown on the Overview swaps the cards for another character's professions, and clicking one opens its recipes in this window, read-only: what that character knows, in the game's categories, with skill-up colours and chances at their skill. Materials, craftable counts and required tools are counted from that character's bags and bank, and what your other characters could add includes the one you're on. A learned recipe can be queued for that character with "Queue for &lt;name&gt;": it goes straight into their queue (they're told at their next login), and the materials they're short of go on the transfer list, so the characters holding them (you first) are told what to mail. In Recipe Search, clicking a recipe that only another of your characters knows opens it on that character. On another character's Enchanting, Disenchanting Mode lists the unbound gear in your bags and bank that you could mail them to disenchant, with what each may give and whether it's worth more sold or disenchanted. At an open mailbox, "Mail to &lt;name&gt;" attaches the item to a mail to them and fills in their name. Each character's professions are saved at login, and a profession's categories the first time any of your characters opens it. The Overview title now names whose professions it shows, in class colour.
+<li>Browse your other characters' professions: a character dropdown on the Overview swaps the cards for another character's professions, and clicking one opens its recipes in this window, read-only: what that character knows, in the game's categories, with skill-up colors and chances at their skill. Materials, craftable counts and required tools are counted from that character's bags and bank, and what your other characters could add includes the one you're on. A learned recipe can be queued for that character with "Queue for &lt;name&gt;": it goes straight into their queue (they're told at their next login), and the materials they're short of go on the transfer list, so the characters holding them (you first) are told what to mail. In Recipe Search, clicking a recipe that only another of your characters knows opens it on that character. On another character's Enchanting, Disenchanting Mode lists the unbound gear in your bags and bank that you could mail them to disenchant, with what each may give and whether it's worth more sold or disenchanted. At an open mailbox, "Mail to &lt;name&gt;" attaches the item to a mail to them and fills in their name. Each character's professions are saved at login, and a profession's categories the first time any of your characters opens it. The Overview title now names whose professions it shows, in class color.
 </li>
 <li>Another player's or character's profession no longer shows craft, queue and track buttons that can't be used; a line says why instead.
 </li>
@@ -312,7 +343,7 @@
 </li>
 <li>Other characters' queues: a character picker in the title bar of the crafting queue and the Transfer Planner shows another of your characters' queue and plan, in both windows at once. Its queue can be edited (quantities, removing, reordering, clearing) but only crafted on that character, and the Transfer Planner shows who should send it what, so you know which characters to log into. Your own row there has the Mail button for your share, and the amounts you set per character are saved with that character's queue. Both windows go back to you when you open them again. Queueing for another character now also prints the whole plan in chat: what each character should send it and what no one has. With nothing queued on the character you're on, the Crafting Queue footer cell says how many other characters have crafts queued.
 </li>
-<li>Integrations options: an overview of the addons ProfessionsForever works with (whether each is installed and what it adds), and a page of its own for each, listed under Integrations: Auctionator, Polestar &amp; TomTom, Questie, Syndicator, SkillUp Forever and EllesmereUI. A setting is greyed out when its addon isn't installed.
+<li>Integrations options: an overview of the addons ProfessionsForever works with (whether each is installed and what it adds), and a page of its own for each, listed under Integrations: Auctionator, Polestar &amp; TomTom, Questie, Syndicator, SkillUp Forever and EllesmereUI. A setting is grayed out when its addon isn't installed.
 <ul>
 <li>Waypoints: says whether waypoints go to Polestar or TomTom, and which Polestar setting decides it.
 </li>
@@ -333,9 +364,9 @@
 </li>
 <li>The shopping list is now shared by all your characters of the same faction by default (the Account-Wide option; your Horde and Alliance characters each have their own list, since items can't be mailed across). Existing lists move over by themselves: each character's own list is added into the shared one the next time you log in to that character (items you lowered below what a queue needs aren't carried over). You can still switch back to one list per character under Options, General, Shopping List Scope, and that choice is kept.
 </li>
-<li>The crafting queue, transfer planner and shopping list each have the same row of three buttons, Crafting Queue, Transfer Planner and Shopping List, in place of the single "Open ..." button. A button is lit while its window is open, and clicking it opens or closes that window. In the shopping list the row sits between the item search and Reset to Queue, and the list shows one row fewer to make room. The crafting queue, transfer planner, shopping list, cooldowns, Skill Up Route and Recipe Search windows are now all the same width (the shopping list is a little narrower, its queue and planner neighbours a little wider).
+<li>The crafting queue, transfer planner and shopping list each have the same row of three buttons, Crafting Queue, Transfer Planner and Shopping List, in place of the single "Open ..." button. A button is lit while its window is open, and clicking it opens or closes that window. In the shopping list the row sits between the item search and Reset to Queue, and the list shows one row fewer to make room. The crafting queue, transfer planner, shopping list, cooldowns, Skill Up Route and Recipe Search windows are now all the same width (the shopping list is a little narrower, its queue and planner neighbors a little wider).
 </li>
-<li>Unlearned recipes in the crafting queue are now marked: grey with a star and a greyed icon, a "Not Learned" tooltip, and a status line saying how many are not learned yet. Crafting the queue skips them at once and says so, instead of waiting and stopping with "Crafting did not start". They can still be queued to plan and shop for their materials, and the Queue button says so on an unlearned recipe.
+<li>Unlearned recipes in the crafting queue are now marked: gray with a star and a grayed icon, a "Not Learned" tooltip, and a status line saying how many are not learned yet. Crafting the queue skips them at once and says so, instead of waiting and stopping with "Crafting did not start". They can still be queued to plan and shop for their materials, and the Queue button says so on an unlearned recipe.
 </li>
 <li>New option under General: Open the Transfer Planner at a Mailbox (on by default, as before). Turn it off to stop the planner opening by itself when you have something to send.
 </li>
@@ -371,7 +402,7 @@
 </li>
 <li>Unlearned recipes now show the profession skill you need to learn them ("Requires skill 150", green once you have it, red until then) in the recipe panel and the recipe list tooltip. This includes recipes taught by a pattern, plan or schematic, such as Green Firework (Engineering 150).
 </li>
-<li>The craftable counter tiles now show their text in their colour, so they work as a legend.
+<li>The craftable counter tiles now show their text in their color, so they work as a legend.
 </li>
 <li>The Font option also lists the fonts that other addons have registered with LibSharedMedia.
 </li>
@@ -406,7 +437,7 @@
 </li>
 <li>With the EllesmereUI skin, the recipe list's search box started a few pixels right of the boxes under it. It now lines up in every skin.
 </li>
-<li>The blinking cursor in an empty search box sat on top of the first letter of the grey hint text ("Search...", Reagent Search, and the shopping list's "Item ID / link / name"). The hint now starts just after the cursor.
+<li>The blinking cursor in an empty search box sat on top of the first letter of the gray hint text ("Search...", Reagent Search, and the shopping list's "Item ID / link / name"). The hint now starts just after the cursor.
 </li>
 <li>The recipe list's Filters button lost its highlight (shown while a filter is on) as soon as the mouse moved over it and away. It now stays lit, with a faint fill, until the filters are back to their defaults.
 </li>

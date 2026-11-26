@@ -60,7 +60,7 @@
 			</a>
 		</div>
 		<div class="meta-line">
-			<span>Version 0.10.6</span>
+			<span>Version 0.10.7</span>
 			<span>Free and open source (GPL-3.0)</span>
 			<span>Built for WoW: Forever only</span>
 			<span>No required dependencies</span>
@@ -115,25 +115,20 @@
 <!-- What's new -->
 <section id="new" aria-labelledby="new-title">
 	<div class="wrap">
-		<div class="new-box">
+		<div class="new-box no-shot">
 			<div class="new-text">
 				<p class="eyebrow">Latest release</p>
-				<h2 id="new-title">New in 0.10.6 <span class="badge">CURRENT</span></h2>
-				<p class="new-intro">What's arrived in 0.10.6.</p>
+				<h2 id="new-title">New in 0.10.7 <span class="badge">CURRENT</span></h2>
+				<p class="new-intro">What's arrived in 0.10.7.</p>
 				<ul class="new-list">
-					<li><strong>Recipe Scout:</strong> enter a zone and a window lists the recipes there you haven't learned: from vendors, trainers, quests, and the creatures and chests that drop them, dungeons included, with the skill each needs. Click to open a recipe, right-click for a waypoint, <kbd>Shift</kbd>-click to ignore one, and pin the window to follow you from zone to zone. <code>/pf scout</code> opens it again.</li>
-					<li><strong>Where recipes come from:</strong> tooltips and the recipe panel name the quest and quest giver for 103 quest recipes, and where a recipe drops, with a waypoint to the giver, the drop or the dungeon's entrance. Limited supply follows what Forever's vendors really sell.</li>
-					<li><strong>Search the auction house:</strong> with the auction house open, a Search button in the recipe panel searches Auctionator's Shopping tab for what the recipe makes and all its reagents.</li>
-					<li><strong>Lure or no lure:</strong> One-Click Fishing has a key to skip the lure for a cast, or to add one when you normally fish without.</li>
-					<li><strong>Your language, your font:</strong> the default font is now the game's own for your client's language, so Korean, Chinese and Russian text shows.</li>
-					<li><strong>And more:</strong> <kbd>Shift</kbd>-click in the addon's windows only links or searches, <kbd>Shift</kbd>-click a recipe to track it, Crates and Writs' Fill counts down, and fixes.</li>
-</ul>
+					<li><strong>Skill ups in the queue:</strong> each queued recipe shows its skill up color and chance, and "+3" for the skill ups its crafts should give, worked out top to bottom as your skill rises. The status line shows where the queue takes each profession, and a row's tooltip says when the recipe turns its next color.</li>
+					<li><strong>Sort by sale price:</strong> with Auctionator, sort the recipe list by what a craft's items sell for at the auction house, whatever the reagents cost.</li>
+					<li><strong>Buy List asks first:</strong> the Buy List button on a vendor's window lists what it will buy and the total, and buys on OK. You can turn the question off.</li>
+					<li><strong>Holiday sources:</strong> recipe tooltips name the holiday a vendor or quest is only there for, such as Fariel Starsong's Lunar Festival quests or the Feast of Winter Veil vendors, and Recipe Scout leaves them out until the holiday starts.</li>
+					<li><strong>And more:</strong> <kbd>Shift</kbd>-click searches TradeSkillMaster's auction tab, Find a Trainer skips trainers who don't teach your rank, drop-down menus have a shadow, and fixes.</li>
+				</ul>
 				<a class="btn" href="changelog.html">Read the full changelog</a>
 			</div>
-			<figure class="shot new-shot">
-				<a href="assets/screenshots/whats-new.png" class="zoom"><img src="assets/screenshots/whats-new.png" alt="The What's New window in game, listing the highlights of version 0.10.6: Recipe Scout, where recipes come from, searching the auction house, the One-Click Fishing lure key, and the Game Default font." width="878" height="843" loading="lazy"></a>
-				<figcaption>What's New</figcaption>
-			</figure>
 		</div>
 	</div>
 </section>
@@ -173,9 +168,9 @@
 					<h3>Find the recipe you're after</h3>
 					<p>And see straight away whether you can make it.</p>
 					<ul>
-						<li>Search by recipe name or reagent; sort by name, skill up difficulty, skill up chance, craftable amount or profit.</li>
-						<li>Filter by learned, has materials, skill-up colour or favorites, with categories you can collapse.</li>
-						<li>Colour-coded by skill up difficulty, with the skill up chance on each recipe and a stripe for whether the materials are in your bags, bank, partly there or missing.</li>
+						<li>Search by recipe name or reagent; sort by name, skill up difficulty, skill up chance, craftable amount, profit or sale price.</li>
+						<li>Filter by learned, has materials, skill-up color or favorites, with categories you can collapse.</li>
+						<li>Color-coded by skill up difficulty, with the skill up chance on each recipe and a stripe for whether the materials are in your bags, bank, partly there or missing.</li>
 						<li>Unlearned recipes say where they come from and what skill they need, with every trainer of your faction that teaches it, nearest first, and the skill and cost they ask. <kbd>Ctrl</kbd>-click to preview gear in the dressing room.</li>
 						<li><strong>Made for Forever:</strong> a glowing infinity marks recipes new in Forever (gold) or changed in Forever (blue), and the tooltip says what changed.</li>
 					</ul>
@@ -212,6 +207,7 @@
 					<ul>
 						<li>Queue any recipe with its own amount, then click <strong>Craft Queue</strong>. Between recipes, a click on the game world crafts the next one.</li>
 						<li><strong>Sub-crafts first:</strong> reagents you can make yourself are queued ahead of the recipe, sized to what you're short of. Short on materials? It holds back the early steps so the final crafts aren't starved. What your alts already hold is used before anything is crafted.</li>
+						<li><strong>Skill ups ahead:</strong> every row shows its skill up color, chance and how many points its crafts should give, worked out as your skill rises, and the status line shows where the queue takes each profession.</li>
 						<li><strong>At a glance:</strong> rows are marked red when something is missing, blue when it's in the bank, and pink when it's waiting in the mailbox.</li>
 						<li><strong>Plan for your alts:</strong> edit another character's queue from the character picker. When another character is making a missing reagent, the queue names them.</li>
 						<li><strong>Enchants too:</strong> queue an enchant with a quantity to plan and shop for its materials; each one you apply comes off the queue.</li>
@@ -221,6 +217,7 @@
 					<ul>
 						<li>Fills itself from your queues and follows them as they change, shared by your characters of the same faction (or one list per character).</li>
 						<li>Needed, owned, from alts and still to buy, a click to search the auction house, and plain-text export.</li>
+						<li><strong>Buy List:</strong> at a vendor, one button buys what the list still needs from them, after showing you the items and the total.</li>
 						<li><strong>Your alts' queues work together:</strong> when one character queues bolts, the shared list drops them and lists the cloth instead. <strong>Queue Needed</strong> queues exactly the crafts that make what's missing.</li>
 						<li><strong>On your tooltips:</strong> items say <strong>On Shopping List</strong>, <strong>Needed by Crafting Queues</strong> and <strong>Still to Buy</strong>, which of your characters' queues are making them, and what a raw material such as ore crafts into.</li>
 						<li><strong>With Auctionator:</strong> unit prices, costs, an estimated total and how old the prices are, with Auctionator's own shopping list kept in sync.</li>
@@ -258,7 +255,7 @@
 					<ul>
 						<li><strong>Disenchanting Mode</strong> lists every piece of gear you could disenchant, in your bags, your bank and on your alts, with search, sort, groups and filters (quality, bank items, set pieces, only what's worth it).</li>
 						<li><strong>What it's worth:</strong> possible results with their chances, and the value vendored, disenchanted and on the auction house, with the best choice highlighted. Auction only wins when it beats the others by more than the listing deposit.</li>
-						<li><strong>Tooltip advice</strong> on every weapon and armour piece, plus your own recorded results next to the expected odds.</li>
+						<li><strong>Tooltip advice</strong> on every weapon and armor piece, plus your own recorded results next to the expected odds.</li>
 						<li><strong>Gear on an alt?</strong> Add it to the transfer plan and they're asked to send it. <strong>No Enchanting here?</strong> See what to send your main enchanter.</li>
 					</ul>
 					<figure class="shot shot-inline">
@@ -332,7 +329,7 @@
 						<li><strong>Quick buttons:</strong> a little bar for your windows and professions, usable without the main window, each with a count of what's waiting. Drag it anywhere, in rows or columns growing from any corner.</li>
 						<li><strong>Keys for everything:</strong> bind a key to any window, Disenchanting Mode or each of your professions, even with the bar hidden. Hover a button and press a key to bind it (<code>/pf bind</code>).</li>
 						<li><strong>Recipe Search:</strong> any recipe in the game, by name or by reagent, and which of your characters know it.</li>
-						<li><strong>Skill Up Route</strong> with SkillUp Forever: your levelling route, step by step.</li>
+						<li><strong>Skill Up Route</strong> with SkillUp Forever: your leveling route, step by step.</li>
 						<li><strong>Tidy windows:</strong> side windows share a row of buttons, dock beside the main window (or the mailbox or bank), and always stay on screen. With six or more footer cells, the footer takes two rows.</li>
 					</ul>
 				</div>
@@ -341,7 +338,7 @@
 
 		<div class="features features-tail">
 			<article class="feature">
-				<h3>Recipe Scout <span class="new-tag">New</span></h3>
+				<h3>Recipe Scout</h3>
 				<ul>
 					<li>Enter a zone and a window lists the recipes you haven't learned that you can get there: vendors (marked when their supply is limited), trainers, quests, and the creatures and chests that drop them. In a dungeon, what its creatures and chests drop.</li>
 					<li>Click to open a recipe, right-click for a waypoint to whoever sells, teaches, gives or drops it, <kbd>Shift</kbd>-click to ignore it in that zone.</li>
@@ -369,7 +366,7 @@
 				<h3>Navigation</h3>
 				<ul>
 					<li>Waypoints through Polestar or TomTom to vendors, trainers and bankers, with trainers for 465 recipes and vendors for 725 built in, Forever's own included. No Questie needed, in any game language.</li>
-					<li>Quest givers for 103 quest recipes, and where recipes drop, with waypoints to the giver, the drop or the dungeon's entrance.</li>
+					<li>Quest givers for 103 quest recipes, and where recipes drop, with waypoints to the giver, the drop or the dungeon's entrance. Holiday vendors and quests say which holiday they're for.</li>
 					<li><strong>It learns:</strong> trainers, vendors and bankers you visit are remembered, so it gets better as you play.</li>
 				</ul>
 			</article>
@@ -377,7 +374,7 @@
 				<h3>Look and feel</h3>
 				<ul>
 					<li><strong>Five skins:</strong> Modern Dark, Blackout, Classic and Minimal, plus EllesmereUI when it's installed.</li>
-					<li><strong>Make it yours:</strong> font (the game's own for your language by default), size, scale, opacity and accent colour. Your Professions keybind and the micro-menu button open this window.</li>
+					<li><strong>Make it yours:</strong> font (the game's own for your language by default), size, scale, opacity and accent color. Your Professions keybind and the micro-menu button open this window.</li>
 				</ul>
 			</article>
 		</div>
